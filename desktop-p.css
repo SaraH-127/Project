@@ -1,0 +1,24 @@
+@media only screen and (max-width: 900px) {
+    .navbar, .navbar-2, .filterDiv {
+        background-color: blueviolet; // On screen sizes under 900px wide the background will now be red
+    }
+    .animals {
+        background-color: plum;
+    }
+}
+@media only screen and (min-width: 630px) {
+    .navbar, .navbar-2, .filterDiv {
+        background-color: coral; // When the screen size is over 630 the background changes to yellow
+    }
+    .animals {
+        background-color: khaki;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .navbar, .navbar-2, .filterDiv {
+        background-color: lightblue; // on a screen size under 450px the background will be white.  
+    }
+    .animals {
+        background-color: lightgreen;
+    }
+}
