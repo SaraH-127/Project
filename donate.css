@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial';
+    font-size: 17px;
+    padding: 8px;
+    color: black;
+    background-color: lightgrey;
+}
+.navbar {
+    font-size: 10pt;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    background-color: lightblue;
+}
+.navbar a {
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+.navbar-right {
+    float: right;
+}
+h2 {
+    margin-top: -1px;
+    padding: 10pt 10pt 0pt 25pt;
+    background-color: lightgreen;
+}
+.move {
+    padding: 10pt 10pt 20pt 40pt;
+    margin-top: -22px;
+    margin-bottom: -1px;
+    background-color: lightgreen;
+}
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    margin-left: -35px;
+}
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+.col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+.col-25, .col-50, .col-75 {
+    padding: 0 16px;
+}
+.container {
+    background-color: lightblue;
+    padding: 5px 20px 15px 20px;
+    border: 1 px solid lightgrey;
+    border-radius: 3px;
+    border-color: black;
+    border-style: solid;
+}
+input[type=text], select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+.btn {
+    background-color: black;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn:hover {
+    background-color: dimgrey;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the 
+two columns stack on top of each other instead of next to each other 
+(also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-25 {
+        margin-bottom: 20px;
+    }
+}
+.cost {
+    display: inline-flex;
+}
+.cost label {
+    padding: 0px 0px 0px 20px;
+}
+input[type=number] {
+    width: 5em;
+}
+img {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 250px;
+    height: 250px;
+}
+li {
+    padding-bottom: 10px;
+}
