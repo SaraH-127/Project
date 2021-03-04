@@ -1,0 +1,24 @@
+@media only screen and (max-width: 900px) {
+    .container {
+        background-color: blueviolet; // On screen sizes under 900px wide the background will now be red
+    }
+    h2, .move {
+        background-color: plum;
+    }
+}
+@media only screen and (min-width: 630px) {
+    .container, {
+        background-color: coral; // When the screen size is over 630 the background changes to yellow
+    }
+    h2, .move {
+        background-color: khaki;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .container {
+        background-color: lightblue; // on a screen size under 450px the background will be white.  
+    }
+    h2, .move {
+        background-color: lightgreen;
+    }
+}
